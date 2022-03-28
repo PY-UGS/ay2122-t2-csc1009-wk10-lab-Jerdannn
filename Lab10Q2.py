@@ -1,4 +1,6 @@
 def average(x, y):
+    # Float because there is a possibility of it
+    # being a floating point number
     return float((x + y)/2)
 
 

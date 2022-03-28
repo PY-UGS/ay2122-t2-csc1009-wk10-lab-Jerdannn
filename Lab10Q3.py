@@ -1,11 +1,11 @@
 def moduleCode(x):
     # Using Python 3.9, therefore,
     switch = {
-        1006: 'Mathematics II',
-        1007: 'Operating Systems',
-        1008: 'Data Structures & Algorithms',
-        1009: 'Object-Oriented Programming',
-        1010: 'Computer Networks'
+        'CSC1006': 'Mathematics II',
+        'CSC1007': 'Operating Systems',
+        'CSC1008': 'Data Structures & Algorithms',
+        'CSC1009': 'Object-Oriented Programming',
+        'CSC1010': 'Computer Networks'
     }
 
     # Second argument is the default value
@@ -22,8 +22,7 @@ def oddNumber():
 
 def main():
     module_code = input("Please enter the module code: ")
-    # [3:] prints out the code after CSC (which is what we need)
-    module_name = moduleCode(int(module_code[3:]))
+    module_name = moduleCode(module_code)
     print(module_name)
     oddNumber()
 
